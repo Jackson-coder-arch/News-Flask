@@ -1,24 +1,24 @@
 from newsapi import NewsApiClient
 from .models import Source
 from .models import Article
-#new input
-# from .main import main
-# import urllib.request,json
+# new input
+from .main import main
+import urllib.request,json
 
 
 
-# #get api key
-# api_key = None
+#get api key
+api_key = None
 
-# def configure_request(app):
-#   '''
-#   initial configuration for important variables
-#   args:
-#     app instance
-#   '''
+def configure_request(app):
+  '''
+  initial configuration for important variables
+  args:
+    app instance
+  '''
 
-#   global api_key
-#   api_key = app.config['NEWS_API_KEY']
+  global api_key
+  api_key = app.config['NEWS_API_KEY']
 
 def get_sources():
   '''
