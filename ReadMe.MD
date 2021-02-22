@@ -1,11 +1,11 @@
 # Project Name
-News Api
+## News Api
 # Project Description
 This is a news app that enables you to get an api_key that helps you get news resources from the server
-# Author(s) Information
+## Author(s) Information
 Jackson Ikonya
 
-# BDD
+## BDD
 * Build the basic website that displays the various news source.
 * Have a view article from selected news sources.
 * User must see the images,description,time.
@@ -54,20 +54,20 @@ Jackson Ikonya
 
 
 
-# Technologies Used
+## Technologies Used
 * Python
 * Flask
 * HTML
 * Bootstrap
 
-# Live Link
+## Live Link
 Link to News Trends: https://matokeo-hivi-sasa.herokuapp.com/
 
 
-# Contact Information
+## Contact Information
 * Email: newstrends@gmail.com
 
-# License and Copyright Information
+## License and Copyright Information
 Copyright(c) 2021 - Jackson-coder-arch.
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
