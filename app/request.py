@@ -1,7 +1,7 @@
-# from newsapi import NewsApiClient
-# from .models import Source
-# from .models import Article
-# #new input
+from newsapi import NewsApiClient
+from .models import Source
+from .models import Article
+#new input
 # from .main import main
 # import urllib.request,json
 
@@ -20,31 +20,31 @@
 #   global api_key
 #   api_key = app.config['NEWS_API_KEY']
 
-# def get_sources():
-#   '''
-#   function that gets sources from api
-#   returns:
-#     array of sources
-#   '''
+def get_sources():
+  '''
+  function that gets sources from api
+  returns:
+    array of sources
+  '''
 
-#   api = NewsApiClient(api_key=api_key)
-#   news_sources_data = api.get_sources()
-#   news_sources = []
+  api = NewsApiClient(api_key=api_key)
+  news_sources_data = api.get_sources()
+  news_sources = []
 
-#   for source in news_sources_data['sources']:
-#     news_sources.append(
-#       Source(
-#         source.get('id'),
-#         source.get('name'),
-#         source.get('description'),
-#         source.get('url'),
-#         source.get('category'),
-#         source.get('language'),
-#         source.get('country')
-#       )
-#     )
+  for source in news_sources_data['sources']:
+    news_sources.append(
+      Source(
+        source.get('id'),
+        source.get('name'),
+        source.get('description'),
+        source.get('url'),
+        source.get('category'),
+        source.get('language'),
+        source.get('country')
+      )
+    )
 
-#   return news_sources
+  return news_sources
 
 # def get_articles_from_source(source):
 #   '''
