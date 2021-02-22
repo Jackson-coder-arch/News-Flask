@@ -46,31 +46,31 @@ def get_sources():
 
   return news_sources
 
-# def get_articles_from_source(source):
-#   '''
-#   function to get articles of specifies source from api
-#   args:
-#     source: the source from which the articles are to be retrieved
+def get_articles_from_source(source):
+  '''
+  function to get articles of specifies source from api
+  args:
+    source: the source from which the articles are to be retrieved
   
-#   returns:
-#     array of articles in source
-#   '''
+  returns:
+    array of articles in source
+  '''
 
-#   api = NewsApiClient(api_key=api_key)
-#   source_articles = api.get_everything(sources=source)
-#   articles = []
+  api = NewsApiClient(api_key=api_key)
+  source_articles = api.get_everything(sources=source)
+  articles = []
 
-#   for article in source_articles['articles']:
-#     articles.append(
-#       Article(
-#         article.get('author'),
-#         article.get('title'),
-#         article.get('description'),
-#         article.get('url'),
-#         article.get('urlToImage'),
-#         article.get('publishedAt'),
-#         article.get('content')
-#       )
-#     )
+  for article in source_articles['articles']:
+    articles.append(
+      Article(
+        article.get('author'),
+        article.get('title'),
+        article.get('description'),
+        article.get('url'),
+        article.get('urlToImage'),
+        article.get('publishedAt'),
+        article.get('content')
+      )
+    )
   
-#   return articles
+  return articles
